@@ -1,8 +1,8 @@
 import React from 'react';
 
 function Header () {
-    return <div>
-        <h1>Header Component</h1>
+    return <div className="header">
+        <h1>SHELFIE</h1>
     </div>
 }
 
