@@ -12,16 +12,16 @@ export default class Form extends React.Component {
         }
     }
 
-    // componentDidUpdate(prevprop){
-    //     if (prevprop.product !== this.props.product) {
-    //         this.setState({
-    //             name: this.props.product.name,
-    //             price: this.props.product.price,
-    //             img: this.props.product.img,
-    //             id: this.props.product.id
-    //         })
-    //     }
-    // }
+    componentDidUpdate(prevprop){
+        if (prevprop.product !== this.props.product) {
+            this.setState({
+                name: this.props.product.name,
+                price: this.props.product.price,
+                img: this.props.product.img,
+                id: this.props.product.id
+            })
+        }
+    }
 
     handleChange = (e) => {
         this.setState({
